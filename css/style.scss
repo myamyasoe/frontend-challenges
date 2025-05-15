@@ -51,7 +51,7 @@ body {
       p {
         width: 45%;
         text-align: center;
-        // margin-left: 348px;
+      
         margin-top: 16px;
         transform: translateX(344px);
         line-height: 26px;
@@ -81,7 +81,7 @@ body {
   .snippet {
     text-align: center;
     margin-top: 7rem;
-    // margin-bottom:2rem ;
+    
     h2 {
       font-weight: 600;
     }
@@ -95,7 +95,7 @@ body {
   .desktop {
     margin-top: 3rem;
     display: flex;
-    // text-align: center;
+   
     gap: 4rem;
     align-items: center;
 
@@ -233,8 +233,7 @@ body {
       font-weight: 450;
     
     transform: translateX(100px);
-      p {
-      }
+    
     }
     .social {
         transform: translateX(500px);
