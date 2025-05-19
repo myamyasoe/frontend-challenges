@@ -6,196 +6,189 @@
 }
 
 body {
-  text-align: center;
-  position: relative;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 15px;
   font-style: normal;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   color: hsl(210, 10%, 33%);
   font-weight: 400;
+  text-align: center;
 }
 body::before {
-  z-index: -1;
   position: absolute;
-  content: "";
+  content: " ";
   background-image: url(../images/bg-header-desktop.png);
   background-repeat: no-repeat;
-  top: 0;
+  top: 0px;
   width: 100vw;
   height: 500px;
 }
 
 .container {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
 }
-@media (min-width: 576px) {
-  .container {
-    background-color: red;
-  }
-}
-
-.history {
+.container .history {
   text-align: center;
   margin-top: 4rem;
 }
-.history img {
+.container .history img {
   width: 80px;
   height: 80px;
 }
-.history .text {
+.container .history .text {
   margin: 3rem;
   text-align: left;
 }
-.history .text h1 {
+.container .history .text h1 {
   text-align: center;
-  font-weight: 600;
+  font-weight: 600px;
 }
-.history .text p {
+.container .history .text p {
   width: 45%;
-  margin: 16px auto 0;
-  max-width: 100%;
   text-align: center;
+  margin-top: 16px;
+  transform: translateX(344px);
   line-height: 26px;
   color: hsl(210, 10%, 33%);
 }
-
-.button .btn {
+.container .button .btn {
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
   color: white;
 }
-.button .ios {
+.container .button .ios {
   background-color: hsl(171, 66%, 44%);
   margin-right: 0.5rem;
-  box-shadow: 0 2px 3px hsl(171, 66%, 44%);
+  box-shadow: 0px 2px 3px hsl(171, 66%, 44%);
   border: 1px solid rgba(0, 128, 0, 0.356);
 }
-.button .mac {
+.container .button .mac {
   background-color: hsl(233, 100%, 69%);
-  box-shadow: 0 2px 3px hsl(233, 100%, 69%);
+  box-shadow: 0px 2px 3px hsl(233, 100%, 69%);
   border: 1px solid rgba(0, 0, 255, 0.308);
 }
-
-.snippet {
+.container .snippet {
   text-align: center;
   margin-top: 7rem;
 }
-.snippet h2 {
+.container .snippet h2 {
   font-weight: 600;
 }
-.snippet p {
+.container .snippet p {
   width: 45%;
-  margin: 1rem auto 0;
+  transform: translateX(320px);
+  margin-top: 1rem;
   line-height: 26px;
 }
-
-.desktop {
+.container .desktop {
   margin-top: 3rem;
   display: flex;
   gap: 4rem;
   align-items: center;
 }
-.desktop img {
+.container .desktop img {
   width: 480px;
   height: 380px;
   margin-left: -20px;
 }
-.desktop .desktop-content {
+.container .desktop .desktop-content {
   flex-basis: 400px;
 }
-.desktop .desktop-content div {
+.container .desktop .desktop-content div {
   margin-bottom: 2rem;
 }
-.desktop .desktop-content div h3 {
+.container .desktop .desktop-content div h3 {
   font-weight: 700;
 }
-.desktop .desktop-content div p {
+.container .desktop .desktop-content div p {
   line-height: 24px;
   margin-top: 0.5rem;
 }
-
-.clipboard {
+.container .clipboard {
   text-align: center;
   margin-top: 5rem;
 }
-.clipboard h3 {
+.container .clipboard h3 {
   font-weight: 600;
   font-size: 22px;
 }
-.clipboard p {
+.container .clipboard p {
   width: 45%;
-  margin: 1rem auto 0;
+  transform: translateX(340px);
   line-height: 28px;
+  margin-top: 1rem;
 }
-.clipboard img {
+.container .clipboard img {
   margin-top: 3rem;
   width: 480px;
   height: 300px;
 }
-
-.supercharge {
+.container .supercharge {
   text-align: center;
 }
-.supercharge .super {
+.container .supercharge .super {
   font-size: 22px;
   margin-top: 2rem;
 }
-.supercharge .boost {
+.container .supercharge .boost {
   margin-top: 1rem;
 }
-.supercharge .create {
+.container .supercharge .create {
   display: flex;
+  text-align: center;
   gap: 2rem;
   margin-top: 4rem;
   margin-left: 165px;
 }
-.supercharge .create .list,
-.supercharge .create .plain,
-.supercharge .create .sneak {
+.container .supercharge .create .list {
   width: 320px;
 }
-.supercharge .create .image img {
+.container .supercharge .create .plain {
+  width: 320px;
+}
+.container .supercharge .create .sneak {
+  width: 320px;
+}
+.container .supercharge .create .image img {
   width: 40px;
   height: 40px;
 }
-.supercharge .create .black h3 {
+.container .supercharge .create .black h3 {
   margin: 1.5rem;
 }
-.supercharge .create .source p {
+.container .supercharge .create .source p {
   line-height: 25px;
 }
-
-.company {
+.container .company {
   margin-top: 6rem;
   display: flex;
   gap: 7rem;
   align-items: center;
   margin-left: 165px;
 }
-.company img {
+.container .company img {
   width: 110px;
 }
-
-.OS {
+.container .OS {
   text-align: center;
   margin-top: 6rem;
 }
-.OS h3 {
+.container .OS h3 {
   margin-bottom: 2rem;
   font-size: 22px;
 }
-.OS p {
+.container .OS p {
+  margin-bottom: 1.5rem;
   width: 43%;
-  margin: 0 auto 1.5rem;
   line-height: 25px;
+  transform: translateX(360px);
 }
-
-.footer {
+.container .footer {
   display: flex;
   align-items: center;
   margin-top: 7rem;
@@ -203,23 +196,23 @@ body::before {
   height: 100px;
   width: 100vw;
 }
-.footer img {
+.container .footer img {
   width: 40px;
   height: 40px;
   margin-left: 165px;
 }
-.footer .para {
+.container .footer .para {
   flex-basis: 340px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  font-weight: 500;
-  margin: 0 auto;
+  font-weight: 450;
+  transform: translateX(100px);
 }
-.footer .social {
-  margin: 0 auto;
+.container .footer .social {
+  transform: translateX(500px);
 }
-.footer .social img {
+.container .footer .social img {
   width: 20px;
   height: 20px;
   margin: 10px;
